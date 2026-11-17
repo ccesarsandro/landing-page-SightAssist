@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SightAssist · Demo</title>
+  <meta name="description" content="Navegación indoor accesible para personas con discapacidad visual, con panel B2B y app para familiares.">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-modulo="c">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="top">
+    <strong class="brand">SightAssist</strong>
+    <button id="out" type="button">Cerrar sesión</button>
+    <button id="snd" type="button" aria-pressed="false">Activar sonido</button>
+  </header>
+  <div class="shell">
+    <nav id="menu" aria-label="Secciones"></nav>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <p id="live" class="sr" aria-live="polite"></p>
+  <p id="chip" class="chip" role="status" hidden></p>
+  <noscript><p class="card">Esta demostración necesita JavaScript.</p></noscript>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
